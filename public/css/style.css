@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", arial;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+header a {
+  color: #888;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 16px;
+}
+
+header nav a:hover {
+  color: lightseagreen;
+}
+
+.portrait {
+  width: 250px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+footer {
+  color: #888;
+  border-top: 1px solid #eee;
+  padding: 8px 0;
+  margin-top: 48px;
+  font-size: 18px;
+}
+
+input {
+  padding: 8px 16px;
+  border: 1px solid #888;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+.heading_text {
+  font-size: 60px;
+  opacity: 0.2;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: unset;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: lightseagreen;
+  color: white;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid lightseagreen;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  scale: 0.95;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px 0 0 0;
+}
+
+.message-container p {
+  margin: unset;
+  font-size: 18px;
+}
