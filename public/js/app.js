@@ -17,9 +17,7 @@ form.addEventListener("submit", async (e) => {
   messageOne.textContent = "Loading...";
   messageTwo.textContent = "";
 
-  const response = await fetch(
-    `http://localhost:3000/weather?address=${locationEntered}`
-  );
+  const response = await fetch(`/weather?address=${locationEntered}`);
 
   const data = await response.json();
 

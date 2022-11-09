@@ -5,6 +5,7 @@ const geocode = require("./utlis/geocode");
 const forecast = require("./utlis/forecast");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
@@ -20,7 +21,7 @@ app.use(express.static(publicDirectory));
 app.get("", (req, res) => {
   res.render("index", {
     title: "Weather",
-    name: "Harsh Gupta",
+    name: "hrsh gupta",
   });
 });
 
@@ -61,15 +62,15 @@ app.get("/weather", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about", {
     title: "About",
-    name: "Harsh Gupta",
+    name: "hrsh gupta",
   });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     title: "Help",
-    helpText: "This is some helpful text",
-    name: "Harsh Gupta",
+    helpText: " For any help leave us a message to gharsh11032000@gmail.com.",
+    name: "hrsh gupta",
   });
 });
 
@@ -77,7 +78,7 @@ app.get("/help/*", (req, res) => {
   res.render("404", {
     title: "404",
     errorMsg: "Help article page not found!",
-    name: "Harsh Gupta",
+    name: "hrsh gupta",
   });
 });
 
@@ -85,10 +86,10 @@ app.get("*", (req, res) => {
   res.render("404", {
     title: "404",
     errorMsg: "Page not found!",
-    name: "Harsh Gupta",
+    name: "hrsh gupta",
   });
 });
 
-app.listen("3000", () => {
-  console.log("Server runs on port 3000");
+app.listen(port, () => {
+  console.log(`Server runs on port ${port}`);
 });
